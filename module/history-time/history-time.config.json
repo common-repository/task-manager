@@ -1,0 +1,14 @@
+{
+	"name": "L'historique du temps",
+	"slug": "history-time",
+	"since": "1.6.0",
+	"version": "1.7.0",
+	"description": "Le module gérant l'historique du temps",
+	"path": "module/history-time/",
+	"dependencies": {
+		"action": {},
+		"class": {},
+		"model": {},
+		"helper": {}
+	}
+}

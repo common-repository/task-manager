@@ -1,0 +1,36 @@
+.wpeo-tag-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 0 0.4em 0;
+
+	.wpeo-tag {
+		font-size: 14px;
+		padding: 0.4em 0.6em;
+		color: rgba(0,0,0,0.5);
+		border: 0;
+		margin: 0.2em;
+		border-radius: 5px;
+		background: rgba(0,0,0,0.1);
+	}
+}
+
+/** Bouton d'ajout */
+.wpeo-tag-wrap .wpeo-tag.add {
+	[data-icon="plus"] {
+		vertical-align: super;
+		font-size: 8px;
+	}
+}
+
+/** Bouton sauvegarde */
+.wpeo-tag-wrap .wpeo-tag.edit {
+	background: $color__primary;
+	color: #fff;
+	margin-left: auto;
+}
+
+/** Tags actifs */
+.wpeo-tag-wrap .wpeo-tag.active {
+	background: $color__primary;
+	color: #fff;
+}

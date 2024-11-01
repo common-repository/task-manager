@@ -1,0 +1,15 @@
+/** Import des modules */
+@import "task/task";
+@import "point/point";
+@import "comment/comment";
+@import "activity/activity";
+@import "user/user";
+@import "metabox/metabox";
+@import "audit/audit";
+@import "indicator/indicator";
+@import "table/table";
+
+/** Import des éléments simples */
+@import "post";
+@import "tag";
+@import "load-more";

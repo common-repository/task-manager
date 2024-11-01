@@ -1,0 +1,256 @@
+/** Ce fichier est inclus dans tout "wp-admin" de WordPress **/
+
+/* ----------------------------------
+		Notification (rond orange)
+-----------------------------------*/
+#wpadminbar .wp-ui-notification {
+  display: inline;
+  padding: 1px 7px 1px 6px !important;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  color: #fff;
+  margin-left: 5px; }
+
+.menu-top .wp-ui-notification {
+	display: inline-block;
+background-color: #d54e21;
+color: #fff;
+font-size: 9px;
+line-height: 17px;
+font-weight: 600;
+margin: 1px 0 0 2px;
+vertical-align: top;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+z-index: 26; }
+.menu-top .wp-ui-notification span {
+	display: block;
+    padding: 0 6px; }
+
+		/* ----------------------------------
+				Metabox "quick time".
+		-----------------------------------*/
+		.quick-time-content .setting-quick-time-button {
+		  position: absolute;
+		  right: 30px;
+		  top: 2px;
+		  padding: 5px;
+		  line-height: 1;
+		  -webkit-border-radius: 6px;
+		          border-radius: 6px; }
+
+		.quick-time-content .inside {
+		  padding: 0;
+		  margin: 0;
+		  position: static; }
+
+		.quick-time-content .list {
+		  border-collapse: collapse; }
+
+		.quick-time-content .list > thead {
+		  background: #fff;
+		  color: rgba(0, 0, 0, 0.8);
+		  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+		.quick-time-content .list td, .quick-time-content .list th {
+		  padding: 0.4em 1em;
+		  vertical-align: middle; }
+
+		.quick-time-content .list .item:nth-child(odd) {
+		  background: rgba(0, 0, 0, 0.1); }
+
+		.quick-time-content .list .item:nth-child(even) {
+		  background: #fff; }
+
+		.quick-time-content .list .task, .quick-time-content .list .point {
+		  width: 15%;
+		  max-width: 15%; }
+
+		.quick-time-content .list .min {
+		  width: 10%;
+		  max-width: 10%; }
+
+		.quick-time-content .list .min > div {
+		  display: -webkit-box;
+		  display: -webkit-flex;
+		  display: -moz-box;
+		  display: -ms-flexbox;
+		  display: flex; }
+
+		.quick-time-content .list .min .fa {
+		  margin: auto 0;
+		  padding-right: 0.4em; }
+
+		.quick-time-content .list .action {
+		  width: 5%;
+		  max-width: 5%;
+		  text-align: right; }
+
+		.quick-time-content .list .content {
+		  width: 55%;
+		  max-width: 55%; }
+
+		.quick-time-content .list input[type="text"], .quick-time-content .list textarea {
+		  width: 100%;
+		  border: 1px solid rgba(0, 0, 0, 0.2);
+		  padding: 0.4em; }
+
+		.quick-time-content .list input[type="text"]:focus, .quick-time-content .list textarea:focus {
+		  border: 1px solid rgba(0, 0, 0, 0.4); }
+
+		.quick-time-content .wpeo-button {
+		  margin: 1em; }
+
+		/* ----------------------------------
+				Model "setting-quick-time"
+		-----------------------------------*/
+		.quick-time-content .content .wpeo-button, .popup-quick-time .content .wpeo-button {
+		  float: right; }
+
+		.quick-time-content .content:after, .popup-quick-time .content:after {
+		  display: block;
+		  content: '';
+		  clear: both; }
+
+    .popup-quick-time .modal-container {
+      max-width: 1200px;
+      width: 100%;
+      max-height: 1200px;
+      height: 80%; }
+
+    .tm_indicator_updateprofile input{
+      width : 100%;
+    }
+
+
+    .tm_add_quicktime_point{
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      padding-top : 10px;
+      padding-bottom : 10px
+    }
+
+    .tm_placeholder_c[contenteditable=true]:empty:before{
+      content: attr(placeholder);
+      display: block; /* For Firefox */
+    }
+
+    .tm_list_parent_li_element:hover{
+      background: rgba(0,0,0,0.05);
+    }
+
+    .tm_list_administrator.active{
+      background: rgba(0,0,0,0.05);
+    }
+
+    .tm_list_administrator:hover + .tm_list_administrator.active{
+      background: none;
+    }
+
+    .tm_list_administrator:hover{
+      background: rgba(0,0,0,0.05);
+    }
+
+    .planninguser .wpeo-table .tm-planning-add-row .table-cell:hover{
+      background-color: lightgray;
+    }
+
+    .planninguser .wpeo-table .table-row .tm-action-delete-row-planning:hover{
+      background-color: lightgray;
+    }
+
+    .wpeo-task-parent .tm-use-class-from-digirisk .cotation:hover {
+      cursor: pointer; }
+
+    .wpeo-task-parent .tm-use-class-from-digirisk .cotation {
+      cursor: pointer;
+      height: 48px;
+      width: 48px;
+      text-align: center;
+ }
+
+    .wpeo-task-parent .tm-use-class-from-digirisk .cotation.default-cotation:hover {
+      background: rgba(0, 0, 0, 0.1); }
+
+    .wpeo-task-parent .tm-use-class-from-digirisk .cotation[data-scale="2"], .wpeo-task-parent .tm-use-class-from-digirisk .cotation[data-scale="3"], .wpeo-task-parent .tm-use-class-from-digirisk .cotation[data-scale="4"] {
+      color: #fff !important; }
+
+    .wpeo-task-parent .tm-use-class-from-digirisk .cotation[data-scale="1"], .wpeo-task-parent .tm-use-class-from-digirisk .cotation.level1 {
+      background: #e2e2e2;
+      color: rgba(0, 0, 0, 0.6); }
+
+    .wpeo-task-parent .tm-use-class-from-digirisk .cotation[data-scale="1"]:hover, .wpeo-task-parent .tm-use-class-from-digirisk .cotation.level1:hover {
+      background: #cecece; }
+
+    .wpeo-task-parent .tm-use-class-from-digirisk .cotation[data-scale="2"], .wpeo-task-parent .tm-use-class-from-digirisk .cotation.level2 {
+      background: #e9ad4f;
+      color: #fff; }
+
+    .wpeo-task-parent .tm-use-class-from-digirisk .cotation[data-scale="2"]:hover, .wpeo-task-parent .tm-use-class-from-digirisk .cotation.level2:hover {
+      background: #e49c2b; }
+
+    .wpeo-task-parent .tm-use-class-from-digirisk .cotation[data-scale="3"], .wpeo-task-parent .tm-use-class-from-digirisk .cotation.level3 {
+      background: #e05353;
+      color: #fff; }
+
+    .wpeo-task-parent .tm-use-class-from-digirisk .cotation[data-scale="3"]:hover, .wpeo-task-parent .tm-use-class-from-digirisk .cotation.level3:hover {
+      background: #da3030; }
+
+    .wpeo-task-parent .tm-use-class-from-digirisk .cotation[data-scale="4"], .wpeo-task-parent .tm-use-class-from-digirisk .cotation.level4 {
+      background: #2b2b2b;
+      color: #fff; }
+
+    .wpeo-task-parent .tm-use-class-from-digirisk .cotation[data-scale="4"]:hover, .wpeo-task-parent .tm-use-class-from-digirisk .cotation.level4:hover {
+      background: #171717; }
+
+    .planninguser .focus-element{
+      border : solid blue 2px;
+    }
+.content-wrap #top-header .nav-right {
+	display: flex;
+}
+.content-wrap #top-header .nav-right .tm-notification {
+	margin-left: 10px;
+}
+
+
+/*.tm-wrap .notification-container {*/
+/*	width: 76%; }*/
+/*.tm-wrap .notification-container .notification-content:first-child {*/
+/*	border: solid #e6ecf0 1px; }*/
+/*.tm-wrap .notification-container .notification-content {*/
+/*	display: block;*/
+/*	width: 100%;*/
+/*	border: solid #e6ecf0 1px;*/
+/*	background-color: white;*/
+/*	border-top: none;*/
+/*	padding: 10px;*/
+/*	transition: background-color 0.2s; }*/
+/*.tm-wrap .notification-container .notification-content:hover {*/
+/*	cursor: pointer;*/
+/*	background-color: #f5f8fa; }*/
+/*.tm-wrap .notification-container .notification-content .header {*/
+/*	display: flex; }*/
+/*.tm-wrap .notification-container .notification-content .header .icon {*/
+/*	display: table;*/
+/*	height: 40px; }*/
+/*.tm-wrap .notification-container .notification-content .header .icon i {*/
+/*	display: table-cell;*/
+/*	font-size: 1.5em;*/
+/*	vertical-align: middle; }*/
+/*.tm-wrap .notification-container .notification-content .header .avatars {*/
+/*	margin-left: 30px;*/
+/*	display: flex; }*/
+/*.tm-wrap .notification-container .notification-content .header .avatars .avatar:first-child {*/
+/*	margin-right: 30px; }*/
+/*.tm-wrap .notification-container .notification-content .content {*/
+/*	color: black;*/
+/*	margin-top: 15px;*/
+/*	margin-left: 52px;*/
+/*	font-size: 1em; }*/
+/*.tm-wrap .notification-container .notification-content .content .main-content {*/
+/*	margin-bottom: 10px; }*/
+/*.tm-wrap .notification-container .notification-content .content .main-content strong {*/
+/*	font-weight: 700; }*/
+/*.tm-wrap .notification-container .notification-content .content .subject {*/
+/*	color: #657786;*/
+/*	line-height: 20px; }*/

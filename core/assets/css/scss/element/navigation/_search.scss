@@ -1,0 +1,35 @@
+/** Barre de recherche */
+.tm-advanced-search {
+	background: rgba(0,0,0,0.05);
+	padding: 0.5em;
+	display: flex;
+	flex-wrap: nowrap;
+
+	.form-element {
+		padding: 0.5em;
+	}
+	.search-action {
+		margin: auto;
+		padding: 0.5em;
+	}
+
+	.header-searchbar {
+		min-width: 200px;
+	}
+	.search-archives {
+		max-width: 70px;
+	}
+	.search-customers, .user-searchbar, .search-categories  {
+		max-width: 200px;
+	}
+
+	/** Placeholders */
+	.search-customers .field-elements:empty:not(:focus),
+	.search-categories .field-elements:empty:not(:focus) {
+		&::before {
+			display: block;
+			content:attr(data-text);
+			color: rgba(0,0,0,0.7);
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"name": "Temps rapides",
+	"slug": "quick_time",
+	"since": "1.6.0",
+	"version": "1.7.0",
+	"description": "Le module gérant les temps rapides",
+	"path": "module/quick_time/",
+	"dependencies": {
+		"filter": {},
+		"action": {},
+		"class": {},
+		"helper": {}
+	},
+	"meta_quick_time": "_tm_quick_time"
+}

@@ -1,0 +1,74 @@
+/** Imports */
+
+@import "mixins/mixins-master";
+@import "variable/variable";
+@import "element/activity/activity";
+@import "external/external";
+
+.tm-wrap {
+
+	@import "font/font";
+	@import "module/theme";
+	@import "element/task/task";
+	@import "element/point/point";
+	@import "element/user/avatar";
+	@import "element/comment/comment";
+
+}
+
+/** Settings */
+.tm-wrap {
+	ul, li {
+		list-style: none;
+		margin: 0;
+	}
+	p, ul, li, h2 {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	.hidden {
+		display: none;
+	}
+}
+
+/** Task header */
+.tm-wrap .wpeo-project-task .wpeo-task-main-header {
+	padding: 0.8em;
+}
+
+/** Point */
+.tm-wrap .points .point:hover {
+	color: rgba(0,0,0,0.6);
+	cursor: pointer;
+}
+.tm-wrap .points .point .point-container .point-content {
+	max-width: none;
+}
+
+/** Activity resume */
+.toolbox-activity {
+	display: flex;
+
+	> * {
+		margin: auto 0;
+		padding: 0 0.4em;
+	}
+	.total-time .time-exceeded .time-exceeded-explanation {
+		color: rgba(0,0,0,0.4);
+	}
+	.total-time .time-exceeded {
+		color: red;
+	}
+	.update-activity {
+		font-style: italic;
+		color: rgba(0,0,0,0.4);
+		display: block;
+	}
+}
+
+.grid-col {
+	float: left;
+	width: 50%;
+}
+

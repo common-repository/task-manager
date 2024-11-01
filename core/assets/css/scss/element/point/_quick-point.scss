@@ -1,0 +1,92 @@
+/** Bouton pour ouvrir la modal */
+.points .point.new {
+	svg {
+		overflow: visible !important
+	}
+	.quick-point-event {
+		position: relative;
+		padding: 0;
+		min-width: 20px;
+		width: 20px;
+		height: 20px;
+		line-height: 18px;
+		background: rgba(0,0,0,0.1);
+		border: 0;
+		overflow: visible;
+		margin-left: auto;
+		@include transition();
+
+		.fa-plus-circle {
+			position: absolute;
+			top: -2px;
+			right: -4px;
+		}
+
+		.fa-list-ul, .fa-plus-circle {
+			color: #000;
+			opacity: 0.4;
+			@include transition();
+		}
+		&:hover {
+			cursor: pointer;
+
+			.fa-list-ul, .fa-plus-circle {
+				opacity: 0.7;
+			}
+		}
+	}
+}
+
+/**
+ * Modal d'ajout rapide
+ * Classe parente : tm-wrap
+ */
+&.wpeo-modal.quick-point {
+	.point-container {
+		display: flex;
+
+		li {
+			margin: auto 0;
+		}
+	}
+	.point-content {
+		position: relative;
+		width: 100%;
+
+		.wpeo-point-new-contenteditable {
+			min-height: 24px;
+			border-bottom: 1px solid rgba(0,0,0,.1);
+			transition: all .2s ease-out;
+			padding-bottom: 6px;
+			// font-family: "kalamregular", open sans, sans-serif;
+			width: 100%;
+			padding-left: 0.5em;
+		}
+		.wpeo-point-new-placeholder {
+			color: rgba(0,0,0,.4);
+			position: absolute;
+			left: 6px;
+			top: 0;
+			pointer-events: none;
+		}
+	}
+
+	.point-valid {
+		padding-right: 0.6em;
+	}
+
+	.point-action {
+		display: flex;
+		max-width: 60px;
+
+		* {
+			margin: auto 0;
+		}
+		.wpeo-point-new-btn {
+			display: none;
+		}
+		.point-time {
+			width: 100%;
+		}
+	}
+}

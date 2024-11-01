@@ -1,0 +1,18 @@
+@import "daily-activity";
+@import "filter";
+@import "sticky-note";
+@import "customer-activity";
+
+.postbox {
+	h2 {
+		font-size: 14px;
+		padding: 8px 12px;
+		margin: 0;
+		line-height: 1.4;
+		font-weight: 600;
+	}
+
+	.page-title-action {
+		top: 0;
+	}
+}
